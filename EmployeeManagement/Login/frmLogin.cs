@@ -13,6 +13,7 @@ namespace EmployeeManagement
 {
     public partial class frmLogin : Form
     {
+        public static string LoginName = "";
         public frmLogin()
         {
             InitializeComponent();
@@ -27,11 +28,14 @@ namespace EmployeeManagement
         {
             if(Users.isLoginSuccessfully(tbUserName.Text, tbPassword.Text))
             {
+                LoginName = tbUserName.Text;
                 this.Hide();
+                frmDashBoard frm = new frmDashBoard();
+                frm.Show();
             }
             else
             {
-                MessageBox.Show("SORRY");
+                MessageBox.Show("Worng UserName/Password");
             }
         }
     }

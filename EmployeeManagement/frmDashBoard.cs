@@ -23,5 +23,13 @@ namespace EmployeeManagement
         {
             Environment.Exit(0);
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            UserControlEmployeeMainMenu menu = new UserControlEmployeeMainMenu();
+            DashBoardPannel.Controls.Clear();
+            menu.Dock = DockStyle.Fill;
+            DashBoardPannel.Controls.Add(menu);
+        }
     }
 }

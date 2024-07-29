@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,9 +44,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsDataAccsesConnectionString.cs" />
+    <Compile Include="DataList\EmployeeData.cs" />
+    <Compile Include="DataList\frmINFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataList\frmINFO.Designer.cs">
+      <DependentUpon>frmINFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataList\ListData.cs" />
     <Compile Include="Login\clsUserData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="DataList\frmINFO.resx">
+      <DependentUpon>frmINFO.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

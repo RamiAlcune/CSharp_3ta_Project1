@@ -30,25 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashBoard));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DashBoardPannel = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CurrentlyUserlabel = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.CurrentlyUserlabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnINFO = new Guna.UI2.WinForms.Guna2Button();
             this.btnPaidEmployess = new Guna.UI2.WinForms.Guna2Button();
             this.UsersSetting = new Guna.UI2.WinForms.Guna2Button();
             this.btnEmployees = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.userControlEmployeeMainMenu1 = new EmployeeManagement.UserControlEmployeeMainMenu();
+            this.DashBoardPannel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.DashBoardPannel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -61,6 +59,31 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1184, 38);
             this.guna2Panel1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(29, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "ESM~DashBoard";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.BackgroundImage = global::EmployeeManagement.Properties.Resources.Logo;
+            this.guna2CirclePictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2CirclePictureBox1.Image = global::EmployeeManagement.Properties.Resources.Logo;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(29, 38);
+            this.guna2CirclePictureBox1.TabIndex = 7;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // btnExit
             // 
@@ -77,7 +100,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(21)))), ((int)(((byte)(50)))));
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
+            this.guna2Panel2.Controls.Add(this.btnHome);
             this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2Panel2.Controls.Add(this.CurrentlyUserlabel);
             this.guna2Panel2.Controls.Add(this.label2);
@@ -91,62 +114,22 @@
             this.guna2Panel2.Size = new System.Drawing.Size(168, 523);
             this.guna2Panel2.TabIndex = 5;
             // 
-            // label1
+            // btnHome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "ESM~DashBoard";
-            // 
-            // DashBoardPannel
-            // 
-            this.DashBoardPannel.Controls.Add(this.userControlEmployeeMainMenu1);
-            this.DashBoardPannel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DashBoardPannel.Location = new System.Drawing.Point(168, 38);
-            this.DashBoardPannel.Name = "DashBoardPannel";
-            this.DashBoardPannel.Size = new System.Drawing.Size(1016, 523);
-            this.DashBoardPannel.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(59, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Admin";
-            // 
-            // CurrentlyUserlabel
-            // 
-            this.CurrentlyUserlabel.AutoSize = true;
-            this.CurrentlyUserlabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentlyUserlabel.ForeColor = System.Drawing.Color.White;
-            this.CurrentlyUserlabel.Location = new System.Drawing.Point(58, 48);
-            this.CurrentlyUserlabel.Name = "CurrentlyUserlabel";
-            this.CurrentlyUserlabel.Size = new System.Drawing.Size(53, 19);
-            this.CurrentlyUserlabel.TabIndex = 6;
-            this.CurrentlyUserlabel.Text = "NULL";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::EmployeeManagement.Properties.Resources.HomeDashBoard;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button1.Location = new System.Drawing.Point(3, 149);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(165, 38);
-            this.guna2Button1.TabIndex = 8;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.Transparent;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::EmployeeManagement.Properties.Resources.HomeDashBoard;
+            this.btnHome.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnHome.Location = new System.Drawing.Point(3, 149);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(165, 38);
+            this.btnHome.TabIndex = 8;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // guna2CirclePictureBox2
             // 
@@ -160,6 +143,27 @@
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(58, 54);
             this.guna2CirclePictureBox2.TabIndex = 7;
             this.guna2CirclePictureBox2.TabStop = false;
+            // 
+            // CurrentlyUserlabel
+            // 
+            this.CurrentlyUserlabel.AutoSize = true;
+            this.CurrentlyUserlabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentlyUserlabel.ForeColor = System.Drawing.Color.White;
+            this.CurrentlyUserlabel.Location = new System.Drawing.Point(58, 48);
+            this.CurrentlyUserlabel.Name = "CurrentlyUserlabel";
+            this.CurrentlyUserlabel.Size = new System.Drawing.Size(53, 19);
+            this.CurrentlyUserlabel.TabIndex = 6;
+            this.CurrentlyUserlabel.Text = "NULL";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(59, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Admin";
             // 
             // btnINFO
             // 
@@ -225,28 +229,13 @@
             this.btnEmployees.Size = new System.Drawing.Size(165, 38);
             this.btnEmployees.TabIndex = 0;
             // 
-            // guna2CirclePictureBox1
+            // DashBoardPannel
             // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.BackgroundImage = global::EmployeeManagement.Properties.Resources.Logo;
-            this.guna2CirclePictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2CirclePictureBox1.Image = global::EmployeeManagement.Properties.Resources.Logo;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(29, 38);
-            this.guna2CirclePictureBox1.TabIndex = 7;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // userControlEmployeeMainMenu1
-            // 
-            this.userControlEmployeeMainMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(54)))));
-            this.userControlEmployeeMainMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlEmployeeMainMenu1.Location = new System.Drawing.Point(0, 0);
-            this.userControlEmployeeMainMenu1.Name = "userControlEmployeeMainMenu1";
-            this.userControlEmployeeMainMenu1.Size = new System.Drawing.Size(1016, 523);
-            this.userControlEmployeeMainMenu1.TabIndex = 0;
+            this.DashBoardPannel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DashBoardPannel.Location = new System.Drawing.Point(168, 38);
+            this.DashBoardPannel.Name = "DashBoardPannel";
+            this.DashBoardPannel.Size = new System.Drawing.Size(1016, 523);
+            this.DashBoardPannel.TabIndex = 6;
             // 
             // frmDashBoard
             // 
@@ -264,11 +253,10 @@
             this.Text = "frmDashBoard";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.DashBoardPannel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,7 +276,6 @@
         private System.Windows.Forms.Label CurrentlyUserlabel;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private UserControlEmployeeMainMenu userControlEmployeeMainMenu1;
+        private Guna.UI2.WinForms.Guna2Button btnHome;
     }
 }
